@@ -15,6 +15,7 @@ import "user.proto";
 import "repository.proto";
 import "milestone.proto";
 import "reactions.proto";
+import "label.proto";
 
 message RepositoryRef {
 	string label = 1;
@@ -76,4 +77,5 @@ message PullRequest {
 	int32 deletions = 34;
 	int32 changed_files = 35;
 	Reactions reactions = 36;
+	repeated Label label = 37;
 }
